@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <style>
+      #delete{
+        cursor: pointer;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      body{
+        padding: 70px;
+      }
+    </style>
+    <title>Sanal Kütüphanem</title>
+</head>
+<body class="bg-dark">
+    <div class="container mt-3 p-3 border rounded-3 bg-light" >
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i> Sanal <span class="text-primary">Kütüphanem</span></h1>
+          <form id="book-form">
+            <div class="form-group mb-1">
+              <label for="title">Kitap Adı</label>
+              <input type="text" id="title" class="form-control" placeholder="Örnek: Sefiller">
+            </div>
+            <div class="form-group mb-1">
+              <label for="author">Yazar</label>
+              <input type="text" id="author" class="form-control" placeholder="Örnek: Victor Hugo">
+            </div>
+            <div class="form-group mb-1">
+              <label for="isbn">ISBN</label>
+              <input type="text" id="isbn" class="form-control" placeholder="Örnek: 97343124" >
+            </div>
+            <input type="submit" value="Kitap Ekle" class="form-control mt-2 btn btn-primary btn-block">
+          </form>
+            
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Kitap Adı</th>
+                <th>Yazar</th>
+                <th>ISBN#</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list">
+                
+            </tbody>
+          </table>
+      </div>
+    
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c28bcfc2da.js"></script>
+</body>
+</html>
